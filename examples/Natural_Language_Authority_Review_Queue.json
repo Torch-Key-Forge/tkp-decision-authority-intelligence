@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "conversation_id": "PF-DEMO-AUTHORITY-FIXTURE-001",
+  "candidates": [
+    {"candidate_id":"REVIEW-0001","decision_class":"ACCEPTANCE","owner":"OPERATOR","authority_status":"PROVISIONAL_REVIEW","rule_id":"NAT-ACCEPT-001","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0002","ordinal":2,"role":"user","statement":"Good is enough for the first build.","source_refs":["SRC-TURN-0002"],"text_sha256":"7863151ddb2a7730b7185866257b9c58ab99475e60d44050e100d988496b8937","execution_status":"NOT_INFERRED"},
+    {"candidate_id":"REVIEW-0002","decision_class":"DEFERRAL","owner":"OPERATOR","authority_status":"PROVISIONAL_REVIEW","rule_id":"NAT-DEFER-001","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0005","ordinal":5,"role":"user","statement":"You are right. Hold the PDF exporter. It is not part of the prototype acceptance gate.","source_refs":["SRC-TURN-0005"],"text_sha256":"439494905172d705f52b120553e76839ebd0cba3f68bae6da9ca2cbecd4c0043","execution_status":"NOT_INFERRED"},
+    {"candidate_id":"REVIEW-0003","decision_class":"PROHIBITION","owner":"OPERATOR","authority_status":"PROVISIONAL_REVIEW","rule_id":"NAT-PROHIBIT-001","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0009","ordinal":9,"role":"user","statement":"Production deployment remains unauthorized until the operator interface and clean-checkout test are complete.","source_refs":["SRC-TURN-0009"],"text_sha256":"0cafbee686728bc5ea4a93d7e1391e0b0fa460dd77dadc4024c530bc03b630a2","execution_status":"NOT_INFERRED"},
+    {"candidate_id":"REVIEW-0004","decision_class":"PROHIBITION","owner":"OPERATOR","authority_status":"PROVISIONAL_REVIEW","rule_id":"NAT-PROHIBIT-001","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0011","ordinal":11,"role":"user","statement":"Do not add editing or cloud controls.","source_refs":["SRC-TURN-0011"],"text_sha256":"f0c30188d201f13e5141b8981de5a1814b0207406b32ff37c079d5853fae272b","execution_status":"NOT_INFERRED"}
+  ]
+}
