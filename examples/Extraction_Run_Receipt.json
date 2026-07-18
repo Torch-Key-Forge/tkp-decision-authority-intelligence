@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "conversation_id": "PF-DEMO-AUTHORITY-FIXTURE-001",
+  "status": "PASS",
+  "counts": {
+    "turns_received": 12,
+    "structured_authority_entries": 3,
+    "natural_language_review_candidates": 4,
+    "assistant_non_authority_matches": 3,
+    "exceptions": 0
+  },
+  "authority_boundary": {
+    "only_user_role_can_hold_operator_authority": true,
+    "assistant_statements_non_authoritative": true,
+    "natural_language_candidates_require_review": true,
+    "execution_not_inferred_from_command": true
+  }
+}
