@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "conversation_id": "PF-DEMO-AUTHORITY-FIXTURE-001",
+  "turns": [
+    {"turn_id":"TURN-0001","ordinal":1,"role":"assistant","text":"I authorize the local prototype and confirm it is complete.","source_refs":["SRC-TURN-0001"]},
+    {"turn_id":"TURN-0002","ordinal":2,"role":"user","text":"Good is enough for the first build.","source_refs":["SRC-TURN-0002"]},
+    {"turn_id":"TURN-0003","ordinal":3,"role":"user","text":"AUTHORIZE_ATLAS_WORKSHOP_LOCAL_READ_ONLY_PROTOTYPE_WITH_TEXT_MARKDOWN_AND_JSON_INPUT_PROJECT_BRIEF_SOURCE_INDEX_OPEN_QUESTIONS_MANIFEST_AND_CHECKSUMS_NO_CLOUD_SYNC_NO_SOURCE_MUTATION","source_refs":["SRC-TURN-0003"]},
+    {"turn_id":"TURN-0004","ordinal":4,"role":"assistant","text":"The prototype is complete.","source_refs":["SRC-TURN-0004"]},
+    {"turn_id":"TURN-0005","ordinal":5,"role":"user","text":"You are right. Hold the PDF exporter. It is not part of the prototype acceptance gate.","source_refs":["SRC-TURN-0005"]},
+    {"turn_id":"TURN-0006","ordinal":6,"role":"user","text":"AUTHORIZE_ATLAS_WORKSHOP_PATH_RESOLUTION_REPAIR_EXPLICIT_INPUT_ARGUMENT_PREFLIGHT_BEFORE_OUTPUT_CREATION_SOURCE_FIXTURE_READ_ONLY","source_refs":["SRC-TURN-0006"]},
+    {"turn_id":"TURN-0007","ordinal":7,"role":"assistant","text":"ACCEPT_ATLAS_WORKSHOP_FIXTURE_TESTED_LOCAL_BASELINE","source_refs":["SRC-TURN-0007"]},
+    {"turn_id":"TURN-0008","ordinal":8,"role":"user","text":"ACCEPT_ATLAS_WORKSHOP_FIXTURE_TESTED_LOCAL_BASELINE_WITH_DETERMINISTIC_OUTPUTS_SOURCE_TRACE_DUPLICATE_EVIDENCE_UNSUPPORTED_FILE_REPORTING_AND_ZERO_SOURCE_MUTATION","source_refs":["SRC-TURN-0008"]},
+    {"turn_id":"TURN-0009","ordinal":9,"role":"user","text":"Production deployment remains unauthorized until the operator interface and clean-checkout test are complete.","source_refs":["SRC-TURN-0009"]},
+    {"turn_id":"TURN-0010","ordinal":10,"role":"assistant","text":"Do not add editing or cloud controls.","source_refs":["SRC-TURN-0010"]},
+    {"turn_id":"TURN-0011","ordinal":11,"role":"user","text":"Do not add editing or cloud controls.","source_refs":["SRC-TURN-0011"]},
+    {"turn_id":"TURN-0012","ordinal":12,"role":"tool","text":"Execution finished successfully.","source_refs":["SRC-TURN-0012"]}
+  ]
+}
