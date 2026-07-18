@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "conversation_id": "PF-DEMO-AUTHORITY-FIXTURE-001",
+  "entries": [
+    {"ledger_id":"AUTH-0001","decision_class":"AUTHORIZATION","owner":"OPERATOR","authority_status":"CANONICAL_STRUCTURED_COMMAND","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0003","ordinal":3,"role":"user","statement":"AUTHORIZE_ATLAS_WORKSHOP_LOCAL_READ_ONLY_PROTOTYPE_WITH_TEXT_MARKDOWN_AND_JSON_INPUT_PROJECT_BRIEF_SOURCE_INDEX_OPEN_QUESTIONS_MANIFEST_AND_CHECKSUMS_NO_CLOUD_SYNC_NO_SOURCE_MUTATION","source_refs":["SRC-TURN-0003"],"text_sha256":"dc3118007e8a4003635f64508a647d8a3a439ddeb27bb6f7676fa9c8179e2327","execution_status":"NOT_INFERRED"},
+    {"ledger_id":"AUTH-0002","decision_class":"AUTHORIZATION","owner":"OPERATOR","authority_status":"CANONICAL_STRUCTURED_COMMAND","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0006","ordinal":6,"role":"user","statement":"AUTHORIZE_ATLAS_WORKSHOP_PATH_RESOLUTION_REPAIR_EXPLICIT_INPUT_ARGUMENT_PREFLIGHT_BEFORE_OUTPUT_CREATION_SOURCE_FIXTURE_READ_ONLY","source_refs":["SRC-TURN-0006"],"text_sha256":"d230e59e6849f7330c04af43a137ce55104a6f05e5ab17446a4c04804218e2d4","execution_status":"NOT_INFERRED"},
+    {"ledger_id":"AUTH-0003","decision_class":"ACCEPTANCE","owner":"OPERATOR","authority_status":"CANONICAL_STRUCTURED_COMMAND","conversation_id":"PF-DEMO-AUTHORITY-FIXTURE-001","turn_id":"TURN-0008","ordinal":8,"role":"user","statement":"ACCEPT_ATLAS_WORKSHOP_FIXTURE_TESTED_LOCAL_BASELINE_WITH_DETERMINISTIC_OUTPUTS_SOURCE_TRACE_DUPLICATE_EVIDENCE_UNSUPPORTED_FILE_REPORTING_AND_ZERO_SOURCE_MUTATION","source_refs":["SRC-TURN-0008"],"text_sha256":"c8619d6c15433eeb06cea81e2ee0f32fa60093f7f19c298fda43bc0e9645c676","execution_status":"NOT_INFERRED"}
+  ],
+  "authority_boundary": {
+    "only_user_role_can_hold_operator_authority": true,
+    "assistant_statements_non_authoritative": true,
+    "natural_language_candidates_require_review": true,
+    "execution_not_inferred_from_command": true
+  }
+}
