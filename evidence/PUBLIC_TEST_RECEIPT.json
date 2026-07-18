@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "candidate": "tkp-decision-authority-intelligence",
+  "status": "PASS_LOCAL_PUBLICATION_CANDIDATE",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "fixture_run": {
+    "returncode": 0,
+    "stdout": "PASS: 3 structured, 4 review candidates, 3 assistant non-authority matches, 0 exceptions",
+    "input": "fixtures/sanitized_normalized_conversation.json",
+    "output": "public-output"
+  },
+  "private_corpus_included": false,
+  "private_paths_included": false,
+  "credentials_included": false,
+  "current_gate": "PUBLICATION_CANDIDATE_PUBLISHED_WINDOWS_VERIFICATION_REQUIRED"
+}
