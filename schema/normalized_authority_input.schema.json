@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://torchkeypress.com/schemas/normalized-authority-input.schema.json",
+  "title": "Normalized Authority Extraction Input",
+  "type": "object",
+  "required": ["conversation_id", "turns"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "conversation_id": {"type": "string", "minLength": 1},
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["turn_id", "ordinal", "role", "text", "source_refs"],
+        "properties": {
+          "turn_id": {"type": "string", "minLength": 1},
+          "ordinal": {"type": "integer", "minimum": 1},
+          "role": {"enum": ["user", "assistant", "tool", "system"]},
+          "text": {"type": "string"},
+          "source_refs": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
