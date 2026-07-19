@@ -59,7 +59,7 @@ jobs:
           finally {
             Pop-Location
           }
-          $receipt = Get-Content (Join-Path $output "Authority_Intelligence_Run_Receipt.json") -Raw | ConvertFrom-Json
+          $receipt = Get-Content (Join-Path $output "receipts\Extraction_Run_Receipt.json") -Raw | ConvertFrom-Json
           if ($receipt.status -ne "PASS") { throw "Authority-intelligence receipt did not pass." }
           if ($receipt.counts.exceptions -ne 0) { throw "Authority intelligence reported exceptions." }
 
@@ -67,8 +67,10 @@ jobs:
         shell: pwsh
         run: |
           $patterns = @("I:\My Drive", "CJ Burke", "\\Users\\CJ", "00_Admin")
+          $scannerPath = ".github/workflows/windows-verification.yml"
           $hits = @()
           foreach ($file in (git ls-files)) {
+            if ($file -eq $scannerPath) { continue }
             if (Test-Path $file -PathType Leaf) {
               $match = Select-String -Path $file -SimpleMatch -Pattern $patterns -ErrorAction SilentlyContinue
               if ($match) { $hits += $match }
