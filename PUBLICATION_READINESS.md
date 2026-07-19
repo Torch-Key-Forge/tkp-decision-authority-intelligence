@@ -13,16 +13,15 @@
 - exact source references and statement hashes;
 - Windows fixture runner;
 - privacy, limitations, and relationship disclosures;
-- public test receipt.
+- public test receipt;
+- clean GitHub-hosted Windows verification of source tests, wheel build, fresh-environment install, CLI fixture run, PASS receipt, zero exceptions, and targeted privacy scan;
+- passing Windows Verification run `29666970470`.
 
 ## Still required before the first tagged release
 
-- anonymous clone, install, and fixture test on Windows;
-- operator inspection of the review queue;
-- final long-term license decision;
-- confirmation that the repository remains free of private paths and source conversations;
-- operator acceptance of the Windows verification receipt.
+- explicit long-term license decision;
+- operator authorization to create the `v0.1.0` tag.
 
 ## Current gate
 
-`PUBLICATION_CANDIDATE_PUBLISHED_WINDOWS_VERIFICATION_REQUIRED`
+`PUBLICATION_CANDIDATE_WINDOWS_VERIFIED_LICENSE_DECISION_REQUIRED`
