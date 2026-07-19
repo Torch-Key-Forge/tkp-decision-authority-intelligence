@@ -68,10 +68,10 @@ Historic private validation identified 188 structured-command evidence occurrenc
 
 ## Status
 
-`0.1.0-publication-candidate`
+`0.1.0-release-candidate`
 
-Current gate: `PUBLICATION_CANDIDATE_PUBLISHED_WINDOWS_VERIFICATION_REQUIRED`
+Current gate: `RELEASE_READY_V0_1_0_TAG_PENDING`
 
 ## License
 
-Source is published for review. No reuse license is granted yet. See `LICENSE`.
+Released under the MIT License. See `LICENSE`.
