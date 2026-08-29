@@ -1,8 +1,34 @@
 # TKP Decision and Authority Intelligence
 
-Evidence-linked extraction and classification of operator decisions, authority, boundaries, and review candidates from normalized AI conversations.
+**Recover evidence of what the operator actually decided—without turning assistant suggestions into authority.**
 
-This is an upstream support component for [Project Foreman](https://github.com/Torch-Key-Forge/tkp-project-foreman).
+TKP Decision and Authority Intelligence is the second public technical component in the Project Foreman recovery chain. It consumes normalized conversation records and separates structured operator authority, provisional natural-language review candidates, and non-authoritative assistant statements while preserving exact evidence links.
+
+## Where it fits
+
+```text
+AI conversation export
+        ↓
+TKP Conversation Normalizer
+        ↓
+TKP Decision and Authority Intelligence
+        ↓
+TKP Conversation-to-Artifact
+        ↓
+Project Foreman workspace / recovery package
+```
+
+Related public components:
+
+- [Project Foreman](https://github.com/Torch-Key-Forge/tkp-project-foreman) — the product-level recovery surface;
+- [TKP Conversation Normalizer](https://github.com/Torch-Key-Forge/tkp-conversation-normalizer) — reconstructs and normalizes source conversation structure;
+- [TKP Conversation-to-Artifact](https://github.com/Torch-Key-Forge/tkp-conversation-to-artifact) — composes reviewed evidence into portable project artifacts.
+
+## Why it exists
+
+Long AI conversations mix together operator decisions, approvals, prohibitions, assistant proposals, speculative plans, and statements about work that may or may not have happened.
+
+For project recovery, those categories cannot be treated as equivalent. This component preserves the distinction so downstream artifacts can represent authority without silently inventing it.
 
 ## Trust model
 
@@ -30,7 +56,21 @@ output/
     └── CHECKSUMS.sha256
 ```
 
-## Quick start
+## Fit and limitations
+
+Use this component when the job is **evidence-linked extraction and classification of operator authority and decision candidates from already-normalized conversations**.
+
+It does not:
+
+- acquire conversations;
+- normalize raw exports;
+- promote assistant statements to operator authority;
+- promote natural-language candidates without review;
+- infer that an authorized action was executed or completed;
+- generate a complete Project Foreman recovery package;
+- establish general provider or marketplace portability.
+
+## Fastest first value
 
 ```powershell
 python -m venv .venv
@@ -54,7 +94,7 @@ The public release accepts a normalized conversation object containing:
 
 See `docs/INPUT_OUTPUT_CONTRACT.md`.
 
-## Public evidence boundary
+## Proof and evidence boundary
 
 The included fixture is synthetic and sanitized, but it reproduces the governing distinctions exercised by Project Foreman:
 
@@ -81,17 +121,17 @@ Current public release: **v0.1.0**, published July 19, 2026.
 
 The release verification covered source tests, wheel construction, fresh-environment installation, CLI fixture execution, PASS receipt generation, zero recorded exceptions, and targeted privacy scanning. See [PUBLICATION_READINESS.md](PUBLICATION_READINESS.md) and [WINDOWS_VERIFICATION_GATE.md](WINDOWS_VERIFICATION_GATE.md).
 
-## Support and security
+## Trust, support, and security
 
 For ordinary usage questions and non-sensitive defects, see [SUPPORT.md](SUPPORT.md).
 
 For sensitive-data and security-reporting guidance, see [SECURITY.md](SECURITY.md). The repository does not currently claim a dedicated private vulnerability-reporting channel.
 
-## Product relationship and portability boundary
+## Product and portability boundary
 
 This repository is an upstream **product component** for Project Foreman. It consumes normalized conversation records and produces evidence-linked authority/decision ledgers, review queues, audit registers, and receipts.
 
-It does not acquire conversations, normalize raw exports, generate complete Project Foreman project packages, or provide a general provider/target adapter framework. No broader multi-target portability claim is established by this repository alone.
+It does not provide a general provider/target adapter framework. No broader multi-target portability claim is established by this repository alone.
 
 ## License
 
