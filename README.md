@@ -43,7 +43,7 @@ tkp-authority-extract .\fixtures\sanitized_normalized_conversation.json .\demo-o
 
 ## Input contract
 
-The public candidate accepts a normalized conversation object containing:
+The public release accepts a normalized conversation object containing:
 
 - a stable `conversation_id`;
 - ordered turns;
@@ -66,11 +66,32 @@ The included fixture is synthetic and sanitized, but it reproduces the governing
 
 Historic private validation identified 188 structured-command evidence occurrences representing 180 unique direct operator commands. A further 352 natural-language candidates were held for review rather than promoted. No private source corpus is included here.
 
-## Status
+## Current release state
 
-`0.1.0-release-candidate`
+Current public release: **v0.1.0**, published July 19, 2026.
 
-Current gate: `RELEASE_READY_V0_1_0_TAG_PENDING`
+- Runnable Python package and CLI: yes
+- Synthetic/sanitized public fixture: yes
+- Automated tests: yes
+- Clean GitHub-hosted Windows verification on the release head: passed
+- Assistant authority promotion: no
+- Natural-language authority promotion without review: no
+- Execution/completion inference: no
+- Private conversation corpus included: no
+
+The release verification covered source tests, wheel construction, fresh-environment installation, CLI fixture execution, PASS receipt generation, zero recorded exceptions, and targeted privacy scanning. See [PUBLICATION_READINESS.md](PUBLICATION_READINESS.md) and [WINDOWS_VERIFICATION_GATE.md](WINDOWS_VERIFICATION_GATE.md).
+
+## Support and security
+
+For ordinary usage questions and non-sensitive defects, see [SUPPORT.md](SUPPORT.md).
+
+For sensitive-data and security-reporting guidance, see [SECURITY.md](SECURITY.md). The repository does not currently claim a dedicated private vulnerability-reporting channel.
+
+## Product relationship and portability boundary
+
+This repository is an upstream **product component** for Project Foreman. It consumes normalized conversation records and produces evidence-linked authority/decision ledgers, review queues, audit registers, and receipts.
+
+It does not acquire conversations, normalize raw exports, generate complete Project Foreman project packages, or provide a general provider/target adapter framework. No broader multi-target portability claim is established by this repository alone.
 
 ## License
 
